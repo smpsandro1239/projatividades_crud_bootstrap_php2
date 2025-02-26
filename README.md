@@ -114,6 +114,20 @@ projatividades_crud_bootstrap_php2/
 - Sanitização de entradas
 - Validação de dados no servidor
 
+## 📸 Capturas do funcionamento
+
+Aqui estão alguns prints do sistema em funcionamento:
+
+| Descrição                | Imagem                                                                                   |
+|--------------------------|------------------------------------------------------------------------------------------|
+| Página Inicial           | ![Página Inicial](screenshots/screencapture-localhost-projatividades-crud-bootstrap-php-2025-02-26-12_25_35.png) |
+| Listagem de Atividades   | ![Listagem](screenshots/screencapture-localhost-projatividades-crud-bootstrap-php-atividades-index-php-2025-02-26-12_24_19.png) |
+| Pesquisa de Atividades   | ![Pesquisa](screenshots/screencapture-localhost-projatividades-crud-bootstrap-php-atividades-index-php-2025-02-26-12_25_21.png) |
+| Detalhes de Atividade    | ![Detalhes](screenshots/screencapture-localhost-projatividades-crud-bootstrap-php-atividades-index-php-2025-02-26-12_25_49.png) |
+| Confirmação de Ação      | ![Confirmação](screenshots/screencapture-localhost-projatividades-crud-bootstrap-php-atividades-index-php-2025-02-26-12_26_03.png) |
+| Edição de Atividade      | ![Edição](screenshots/screencapture-localhost-projatividades-crud-bootstrap-php-atividades-edit-php-2025-02-26-12_26_23.png) |
+
+
 ## ✨ Melhorias Futuras
 
 - [ ] Sistema de autenticação e login
