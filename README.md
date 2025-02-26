@@ -1,9 +1,5 @@
 # projatividades_crud_bootstrap_php2
 
-Claro! O README que você forneceu já está muito bem estruturado e detalhado. Vou ajustá-lo um pouco para garantir que ele reflita o repositório `smpsandro1239/projatividades_crud_bootstrap_php2` (como você quer enviar para sua conta) e adicionar alguns toques para torná-lo ainda mais claro e profissional. Aqui está a versão revisada e pronta para uso:
-
----
-
 # Sistema de Gestão de Atividades
 
 Um sistema web desenvolvido em PHP para a gestão de atividades escolares/acadêmicas, permitindo o registro, visualização, edição e exclusão de atividades de forma simples e eficiente.
