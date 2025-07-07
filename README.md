@@ -1,9 +1,6 @@
+***🎓 Plataforma de Gestão de Atividades Educativas***
 
-***🎓 SISTEMA DE GESTÃO DE ATIVIDADES***
-
-Simples. 
-
-Eficiente.
+📘 Simplifica. 📊 Organiza. 🚀 Automatiza.
 
 Adaptado às realidades educativas.
 
@@ -38,7 +35,7 @@ Permite o registo, consulta, edição e eliminação de atividades de forma intu
 
 ---
 
-📋 PRÉ-REQUISITOS
+***📋 PRÉ-REQUISITOS***
 
 • Servidor web (ex: Apache ou Nginx)  
 • PHP 7.4 ou superior  
@@ -119,15 +116,18 @@ projatividades_crud_bootstrap_php2/
 ***📊 FUNCIONALIDADES DETALHADAS***
 
 **Painel Principal**
+
 • Visão geral das atividades
 • Acesso rápido às opções principais
 
 **Gestão de Atividades**
+
 • Formulário com validação de campos obrigatórios
 • Edição e eliminação com alertas de confirmação
 • Gestão de datas e custos associáveis
 
 **Gestão de Erros**
+
 • Registo automático de erros em ficheiro
 • Interface limpa para diagnóstico
 
@@ -143,7 +143,7 @@ projatividades_crud_bootstrap_php2/
 
 ---
 
-📸 EXEMPLOS DO FUNCIONAMENTO
+***📸 EXEMPLOS DO FUNCIONAMENTO***
 
 | Funcionalidade         | Imagem                                                                                                                             |
 | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
