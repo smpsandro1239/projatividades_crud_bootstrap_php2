@@ -1,128 +1,151 @@
-````md
-# Sistema de Gestão de Atividades
 
-Um sistema web desenvolvido em PHP para a gestão de atividades escolares/académicas, permitindo o registo, visualização, edição e eliminação de atividades de forma simples e eficiente.
+***🎓 SISTEMA DE GESTÃO DE ATIVIDADES***
 
-## 🚀 Funcionalidades
+Simples. 
 
-- Registo de novas atividades  
-- Listagem de todas as atividades registadas  
-- Visualização detalhada de cada atividade  
-- Edição de atividades existentes  
-- Eliminação de atividades  
-- Pesquisa dinâmica de atividades  
-- Registo e visualização de erros do sistema  
+Eficiente.
 
-## 💻 Tecnologias Utilizadas
+Adaptado às realidades educativas.
 
-- **PHP** 7.4+  
-- **MySQL**  
-- **Bootstrap** 5.3.2  
-- **jQuery** 3.6.0  
-- **Font Awesome** 4.6.2  
-- **SweetAlert**  
+---
 
-## 📋 Pré-requisitos
+Um sistema web construído em PHP para facilitar a gestão de atividades escolares e académicas. 
 
-- Servidor web (ex.: Apache ou Nginx)  
-- PHP 7.4 ou superior  
-- MySQL 5.7 ou superior  
-- Extensão `mysqli` do PHP ativa  
+Permite o registo, consulta, edição e eliminação de atividades de forma intuitiva, moderna e organizada.
 
-## 🔧 Instalação
+---
 
-1. Clona o repositório:
-   ```bash
-   git clone https://github.com/smpsandro1239/projatividades_crud_bootstrap_php2.git
+***🚀 FUNCIONALIDADES PRINCIPAIS***
+
+• Registo de novas atividades  
+• Listagem de todas as atividades registadas  
+• Visualização detalhada de cada atividade  
+• Edição de atividades existentes  
+• Eliminação de atividades  
+• Pesquisa dinâmica em tempo real  
+• Registo e visualização de erros do sistema  
+
+---
+
+***💻 TECNOLOGIAS UTILIZADAS***
+
+• PHP 7.4+  
+• MySQL  
+• Bootstrap 5.3.2  
+• jQuery 3.6.0  
+• Font Awesome 4.6.2  
+• SweetAlert  
+
+---
+
+📋 PRÉ-REQUISITOS
+
+• Servidor web (ex: Apache ou Nginx)  
+• PHP 7.4 ou superior  
+• MySQL 5.7 ou superior  
+• Extensão `mysqli` do PHP ativa  
+
+---
+
+***🛠️ COMO INSTALAR***
+
+1. Clonar o repositório:
+```bash
+git clone https://github.com/smpsandro1239/projatividades_crud_bootstrap_php2.git
 ````
 
-2. Cria a base de dados e a tabela no MySQL:
+2. Criar a base de dados no MySQL:
 
-   ```sql
-   CREATE DATABASE gestao_atividades;
-   USE gestao_atividades;
+```sql
+CREATE DATABASE gestao_atividades;
+USE gestao_atividades;
 
-   CREATE TABLE atividades (
-       id INT AUTO_INCREMENT PRIMARY KEY,
-       nome VARCHAR(255) NOT NULL,
-       descricao TEXT,
-       modalidade VARCHAR(100),
-       dinamizadores VARCHAR(255),
-       data DATE,
-       local VARCHAR(255),
-       destinatarios VARCHAR(255),
-       numero_participantes INT,
-       custo DECIMAL(10,2)
-   );
-   ```
+CREATE TABLE atividades (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    descricao TEXT,
+    modalidade VARCHAR(100),
+    dinamizadores VARCHAR(255),
+    data DATE,
+    local VARCHAR(255),
+    destinatarios VARCHAR(255),
+    numero_participantes INT,
+    custo DECIMAL(10,2)
+);
+```
 
-3. Configura a ligação com a base de dados em `config.php`:
+3. Configurar a ligação à base de dados no ficheiro `config.php`:
 
-   ```php
-   define('DB_NAME', 'gestao_atividades');
-   define('DB_USER', 'o_teu_utilizador');
-   define('DB_PASSWORD', 'a_tua_senha');
-   define('DB_HOST', 'localhost');
-   ```
+```php
+define('DB_NAME', 'gestao_atividades');
+define('DB_USER', 'o_teu_utilizador');
+define('DB_PASSWORD', 'a_tua_senha');
+define('DB_HOST', 'localhost');
+```
 
-4. Coloca os ficheiros no diretório do servidor web (ex.: `htdocs` do XAMPP) e acede através do navegador.
+4. Copiar os ficheiros para o diretório do servidor (ex: `htdocs` do XAMPP)
+5. Aceder no navegador: `http://localhost/projatividades_crud_bootstrap_php2`
 
-## 📦 Estrutura do Projeto
+---
+
+***📂 ESTRUTURA DO PROJETO***
 
 ```
 projatividades_crud_bootstrap_php2/
 │
 ├── atividades/
-│   ├── add.php         # Adicionar nova atividade
-│   ├── delete.php      # Eliminar atividade
-│   ├── edit.php        # Editar atividade
-│   ├── functions.php   # Funções auxiliares
-│   ├── index.php       # Listagem de atividades
-│   ├── modal.php       # Modais para interação
-│   └── view.php        # Visualização detalhada
+│   ├── add.php         → Adicionar atividade
+│   ├── delete.php      → Eliminar atividade
+│   ├── edit.php        → Editar atividade
+│   ├── functions.php   → Funções auxiliares
+│   ├── index.php       → Listagem de atividades
+│   ├── modal.php       → Janela modal
+│   └── view.php        → Visualização detalhada
 │
 ├── css/
-│   ├── bootstrap-*.css # Estilos do Bootstrap
-│   └── Outros ficheiros de estilo
+│   └── Estilos e personalizações
 │
 ├── inc/
-│   ├── database.php    # Ligação com a base de dados
-│   ├── footer.php      # Rodapé do layout
-│   └── header.php      # Cabeçalho do layout
+│   ├── database.php    → Ligação com a base de dados
+│   ├── footer.php      → Rodapé
+│   └── header.php      → Cabeçalho
 │
-├── config.php          # Configurações do sistema
-└── index.php           # Página principal
+├── config.php          → Configuração principal
+└── index.php           → Página principal
 ```
 
-## 🛠️ Funcionalidades Detalhadas
+---
 
-### Painel de Controlo (Dashboard)
+***📊 FUNCIONALIDADES DETALHADAS***
 
-* Visão geral das atividades
-* Acesso rápido às funcionalidades principais
+**Painel Principal**
+• Visão geral das atividades
+• Acesso rápido às opções principais
 
-### Gestão de Atividades
+**Gestão de Atividades**
+• Formulário com validação de campos obrigatórios
+• Edição e eliminação com alertas de confirmação
+• Gestão de datas e custos associáveis
 
-* Formulário para registo com validação de campos
-* Listagem com opções de edição e eliminação
-* Suporte a datas e custos
+**Gestão de Erros**
+• Registo automático de erros em ficheiro
+• Interface limpa para diagnóstico
 
-### Sistema de Erros
+---
 
-* Registo de erros em ficheiro de log
-* Interface simples para monitorização
+***🔒 SEGURANÇA***
 
-## 🔒 Segurança
+• Proteção contra SQL Injection com `mysqli`
 
-* Proteção contra SQL Injection com `mysqli`
-* Sanitização de entradas
-* Validação de dados no servidor
+• Sanitização de entradas do utilizador
 
-## 📸 Capturas do Funcionamento
+• Validação robusta no lado do servidor
 
-Aqui estão alguns capturas de ecrã do sistema em funcionamento:
+---
 
-| Descrição              | Imagem                                                                                                                             |
+📸 EXEMPLOS DO FUNCIONAMENTO
+
+| Funcionalidade         | Imagem                                                                                                                             |
 | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
 | Página Principal       | ![Página Principal](screenshots/screencapture-localhost-projatividades-crud-bootstrap-php-2025-02-26-12_25_35.png)                 |
 | Listagem de Atividades | ![Listagem](screenshots/screencapture-localhost-projatividades-crud-bootstrap-php-atividades-index-php-2025-02-26-12_24_19.png)    |
@@ -131,27 +154,42 @@ Aqui estão alguns capturas de ecrã do sistema em funcionamento:
 | Confirmação de Ação    | ![Confirmação](screenshots/screencapture-localhost-projatividades-crud-bootstrap-php-atividades-index-php-2025-02-26-12_26_03.png) |
 | Edição de Atividade    | ![Edição](screenshots/screencapture-localhost-projatividades-crud-bootstrap-php-atividades-edit-php-2025-02-26-12_26_23.png)       |
 
-## ✨ Melhorias Futuras
+---
 
-* [ ] Sistema de autenticação e início de sessão
-* [ ] Exportação de atividades para PDF/Excel
-* [ ] Relatórios gráficos
-* [ ] Design responsivo optimizado para dispositivos móveis
+***📈 MELHORIAS FUTURAS***
 
-## 👤 Autor
+☐ Sistema de autenticação e início de sessão
 
-* **Sandro** – *Desenvolvimento e Implementação*
-  GitHub: [smpsandro1239](https://github.com/smpsandro1239)
+☐ Exportação de dados em PDF ou Excel
 
-## 📄 Licença
+☐ Relatórios gráficos com estatísticas
 
-Este projeto está sob a licença MIT – consulta o ficheiro [LICENSE.md](LICENSE.md) para mais detalhes (adiciona um se desejares).
-
-## 🎁 Agradecimentos
-
-* À comunidade open-source por ferramentas incríveis como Bootstrap e PHP
-* À inspiração de projetos CRUD simples e funcionais
+☐ Interface adaptada a dispositivos móveis
 
 ---
 
-⌨️ Desenvolvido com ❤️ pelo [Sandro](https://github.com/smpsandro1239) 😊
+***👤 AUTOR***
+
+Desenvolvido por **Sandro Pereira**
+
+Repositório: [github.com/smpsandro1239](https://github.com/smpsandro1239)
+
+---
+
+***📄 LICENÇA***
+
+Este projeto está disponível sob a licença MIT.
+
+Consulta o ficheiro [LICENSE.md](LICENSE.md) para mais informações.
+
+---
+
+***🎁 AGRADECIMENTOS***
+
+• A todas as comunidades open-source envolvidas
+
+• A projetos que serviram de inspiração para este CRUD
+
+---
+
+⌨️ Desenvolvido com dedicação e paixão por [Sandro](https://github.com/smpsandro1239) 
