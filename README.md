@@ -1,4 +1,6 @@
 ***🎓 Plataforma de Gestão de Atividades Educativas***
+*** ***
+
 
 📘 Simplifica. 📊 Organiza. 🚀 Automatiza.
 
@@ -192,4 +194,18 @@ Consulta o ficheiro [LICENSE.md](LICENSE.md) para mais informações.
 
 ---
 
-⌨️ Desenvolvido com dedicação e paixão por [Sandro](https://github.com/smpsandro1239) 
+***💡 Contribui ou dá feedback!***
+
+Este projeto é de código aberto — sugestões, melhorias e forks são bem-vindos.
+
+Vamos tornar a gestão educativa mais eficiente — juntos!
+
+
+---
+
+
+
+⌨️ Desenvolvido com dedicação e paixão por 
+
+
+***Sandro Pereira*** 🇵🇹
